@@ -5,7 +5,10 @@ function App() {
   return (
     <>
       <Navbar title="TextUtils_by_Yasmeen" aboutText="About us"/>
-      <TextForm/>
+      <div className="container">
+      <TextForm heading="Enter your Text to analayze" />
+      </div>
+      
     </>
   );
 }
