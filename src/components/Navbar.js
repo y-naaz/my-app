@@ -1,11 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-
-export default function Navbar({title = "Set title" , aboutText = "set about Text"}) {
+export default function Navbar({
+  title = "Set title",
+  aboutText = "set about Text",
+}) {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             {title}
@@ -41,7 +43,7 @@ export default function Navbar({title = "Set title" , aboutText = "set about Tex
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-primary" type="submit">
                 Search
               </button>
             </form>
@@ -49,13 +51,13 @@ export default function Navbar({title = "Set title" , aboutText = "set about Tex
         </div>
       </nav>
     </div>
-  )
+  );
 }
 Navbar.propTypes = {
-    title : PropTypes.string,
-    aboutText: PropTypes.string
-}
+  title: PropTypes.string,
+  aboutText: PropTypes.string,
+};
 Navbar.defaultProps = {
-  title:"TextUtils",
-  aboutText : "About_Us"
-}
+  title: "TextUtils",
+  aboutText: "About_Us",
+};
